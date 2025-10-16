@@ -1,0 +1,504 @@
+{
+  "chapter_id": "chap_1_mystery_letter",
+  "title": "谜信疑云",
+  "scene": {
+    "building_id": "b3",
+    "building_name": "八马训练营地",
+    "furniture_id": "f05",
+    "furniture_name": "露营帐篷",
+    "description": "星夜下的训练营地，信箱立在角落，旁边堆满物资箱。"
+  },
+  "npcs": [
+    {
+      "npc_id": "alice",
+      "npc_name": "Alice"
+    },
+    {
+      "npc_id": "n1",
+      "npc_name": "李川"
+    }
+  ],
+  "turns": [
+    {
+      "turn_index": 0,
+      "speaker": "alice",
+      "line": "（翻找物资时停住）这是什么？没署名的信...",
+      "narration": "信纸皱巴巴的，字迹刻意藏了笔锋，隐约可见‘积怨已久’‘挑拨关系’的字眼。",
+      "options": [],
+      "effects": [
+        {
+          "player_attribute": [
+            0,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "favorability_change": [
+            0,
+            0
+          ],
+          "gain_items": [
+            "匿名信"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_index": 1,
+      "speaker": "player",
+      "line": "",
+      "narration": "",
+      "options": [
+        {
+          "option_id": "o1",
+          "text": "快打开看看内容",
+          "narration": ""
+        },
+        {
+          "option_id": "o2",
+          "text": "先别声张，小心被人看见",
+          "narration": ""
+        }
+      ],
+      "effects": [
+        {
+          "player_attribute": [
+            0,
+            -2,
+            0,
+            -2,
+            0
+          ],
+          "favorability_change": [
+            2,
+            0
+          ],
+          "gain_items": []
+        },
+        {
+          "player_attribute": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "favorability_change": [
+            3,
+            0
+          ],
+          "gain_items": []
+        }
+      ]
+    },
+    {
+      "turn_index": 2,
+      "speaker": "alice",
+      "line": "（捏紧信纸）不管是谁写的，绝不能让它破坏营地和谐。",
+      "narration": "",
+      "options": [],
+      "effects": [
+        {
+          "player_attribute": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "favorability_change": [
+            0,
+            0
+          ],
+          "gain_items": []
+        }
+      ]
+    },
+    {
+      "turn_index": 3,
+      "speaker": "player",
+      "line": "",
+      "narration": "",
+      "options": [
+        {
+          "option_id": "o3",
+          "text": "去找李川教官问问？他最了解营地",
+          "narration": ""
+        },
+        {
+          "option_id": "o4",
+          "text": "先自己查，别惊动其他人",
+          "narration": ""
+        }
+      ],
+      "effects": [
+        {
+          "player_attribute": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "favorability_change": [
+            0,
+            2
+          ],
+          "gain_items": []
+        },
+        {
+          "player_attribute": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "favorability_change": [
+            2,
+            0
+          ],
+          "gain_items": []
+        }
+      ]
+    },
+    {
+      "turn_index": 4,
+      "speaker": "n1",
+      "line": "（擦拭靶场木靶，头也不抬）这么晚了还没休息？有事？",
+      "narration": "",
+      "options": [],
+      "effects": [
+        {
+          "player_attribute": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "favorability_change": [
+            0,
+            0
+          ],
+          "gain_items": []
+        }
+      ]
+    }
+  ]
+}
+
+
+{
+  "chapter_id": "chap_1_camp_mystery",
+  "title": "营地疑云",
+  "scene": {
+    "building_id": "b3",
+    "building_name": "八马训练营地",
+    "furniture_id": "f05",
+    "furniture_name": "露营帐篷",
+    "description": "星夜下的训练营地，靶场木靶整齐排列，露营帐篷在微风中轻晃。我和Alice在营地角落的物资箱旁整理装备。"
+  },
+  "npcs": [
+    {
+      "npc_id": "ai_assistant",
+      "npc_name": "Alice"
+    },
+    {
+      "npc_id": "n1",
+      "npc_name": "李川"
+    }
+  ],
+  "turns": [
+    {
+      "turn_index": 0,
+      "speaker": "ai_assistant",
+      "line": "（翻动物资箱）这是什么？皱巴巴的，连署名都没有。",
+      "narration": "（信纸边缘泛黄，字迹刻意压制笔锋，内容隐约可见：'你以为同伴真的信任你？上次任务的分配...'）",
+      "options": [],
+      "effects": [
+        {
+          "player_attribute": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "favorability_change": [
+            0,
+            0
+          ],
+          "gain_items": []
+        }
+      ]
+    },
+    {
+      "turn_index": 1,
+      "speaker": "player",
+      "line": "",
+      "narration": "",
+      "options": [
+        {
+          "option_id": "o1",
+          "text": "先看看内容再说",
+          "narration": "（信中详细描述了Alice某次任务中的决策失误，暗示同伴因此受损，并挑拨她与林月的关系...）"
+        },
+        {
+          "option_id": "o2",
+          "text": "可能是恶作剧，先收好",
+          "narration": ""
+        }
+      ],
+      "effects": [
+        {
+          "player_attribute": [
+            -1,
+            -2,
+            0,
+            -1,
+            0
+          ],
+          "favorability_change": [
+            2,
+            0
+          ],
+          "gain_items": []
+        },
+        {
+          "player_attribute": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "favorability_change": [
+            -1,
+            0
+          ],
+          "gain_items": []
+        }
+      ]
+    },
+    {
+      "turn_index": 2,
+      "speaker": "ai_assistant",
+      "line": "不管是不是恶作剧，这内容太针对我了。我们得悄悄查，别惊动其他人。",
+      "narration": "",
+      "options": [],
+      "effects": [
+        {
+          "player_attribute": [
+            0,
+            -1,
+            0,
+            -2,
+            0
+          ],
+          "favorability_change": [
+            0,
+            0
+          ],
+          "gain_items": []
+        }
+      ]
+    },
+    {
+      "turn_index": 3,
+      "speaker": "n1",
+      "line": "这么晚还在整理？明天一早还要训练。",
+      "narration": "李川背着训练用的长刀，从靶场方向走来，眉头微蹙。",
+      "options": [],
+      "effects": [
+        {
+          "player_attribute": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "favorability_change": [
+            0,
+            0
+          ],
+          "gain_items": []
+        }
+      ]
+    },
+    {
+      "turn_index": 4,
+      "speaker": "player",
+      "line": "",
+      "narration": "",
+      "options": [
+        {
+          "option_id": "o3",
+          "text": "教官，最近营地有陌生人来过吗？",
+          "narration": ""
+        },
+        {
+          "option_id": "o4",
+          "text": "没什么，只是整理下物资",
+          "narration": ""
+        }
+      ],
+      "effects": [
+        {
+          "player_attribute": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "favorability_change": [
+            0,
+            3
+          ],
+          "gain_items": []
+        },
+        {
+          "player_attribute": [
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "favorability_change": [
+            0,
+            -2
+          ],
+          "gain_items": []
+        }
+      ]
+    },
+    {
+      "turn_index": 5,
+      "speaker": "n1",
+      "line": "上周夜里巡逻，看到营地外围有黑影，没追上。还有人抱怨上次任务分配不均...",
+      "narration": "",
+      "options": [],
+      "effects": [
+        {
+          "player_attribute": [
+            0,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "favorability_change": [
+            0,
+            0
+          ],
+          "gain_items": []
+        }
+      ]
+    },
+    {
+      "turn_index": 6,
+      "speaker": "ai_assistant",
+      "line": "李川教官，你见过这种墨水吗？边缘发灰，质地粘稠。",
+      "narration": "Alice指尖捻起信纸边缘的干墨，对着月光观察，眉头紧锁。",
+      "options": [],
+      "effects": [
+        {
+          "player_attribute": [
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "favorability_change": [
+            0,
+            0
+          ],
+          "gain_items": []
+        }
+      ]
+    },
+    {
+      "turn_index": 7,
+      "speaker": "n1",
+      "line": "这是大金牙赌场的记账墨水，王启明那家伙总说他们的墨水掺了特殊烟灰。",
+      "narration": "",
+      "options": [],
+      "effects": [
+        {
+          "player_attribute": [
+            0,
+            2,
+            0,
+            1,
+            0
+          ],
+          "favorability_change": [
+            0,
+            2
+          ],
+          "gain_items": []
+        }
+      ]
+    },
+    {
+      "turn_index": 8,
+      "speaker": "player",
+      "line": "",
+      "narration": "",
+      "options": [
+        {
+          "option_id": "o5",
+          "text": "去赌场找王启明问清楚",
+          "narration": ""
+        },
+        {
+          "option_id": "o6",
+          "text": "先去王姐餐馆打听下赌场的事",
+          "narration": ""
+        }
+      ],
+      "effects": [
+        {
+          "player_attribute": [
+            1,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "favorability_change": [
+            2,
+            0
+          ],
+          "gain_items": []
+        },
+        {
+          "player_attribute": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "favorability_change": [
+            1,
+            1
+          ],
+          "gain_items": []
+        }
+      ]
+    }
+  ]
+}
+
+
+思考：减少prompt长度，内容。 
+合并prompt中的输出格式案例和字段说明。
+减少prompt中规定的输出字段，比如chapter_id, option_id，description，building_id, furniture_id, turn_index, effects等。
+effects可以在评估总结阶段再补充。
+options改成string array，去掉所有的narration字段。
