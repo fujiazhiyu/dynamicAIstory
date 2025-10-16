@@ -1,0 +1,232 @@
+{
+  "building_furnitures_list": [
+    {
+      "building_id": "b1",
+      "building_name": "猎人的木屋",
+      "furnitures": [
+        {
+          "furniture_id": "f01",
+          "furniture_name": "储物箱"
+        }
+      ]
+    },
+    {
+      "building_id": "b2",
+      "building_name": "王姐餐馆",
+      "furnitures": [
+        {
+          "furniture_id": "f02",
+          "furniture_name": "餐桌"
+        },
+        {
+          "furniture_id": "f03",
+          "furniture_name": "酒吧台"
+        }
+      ]
+    },
+    {
+      "building_id": "b3",
+      "building_name": "八马训练营地",
+      "furnitures": [
+        {
+          "furniture_id": "f04",
+          "furniture_name": "靶场"
+        },
+        {
+          "furniture_id": "f05",
+          "furniture_name": "露营帐篷"
+        }
+      ]
+    },
+    {
+      "building_id": "b4",
+      "building_name": "星星旅馆",
+      "furnitures": [
+        {
+          "furniture_id": "f06",
+          "furniture_name": "旅舍帐篷"
+        }
+      ]
+    },
+    {
+      "building_id": "b5",
+      "building_name": "月亮大商场",
+      "furnitures": [
+        {
+          "furniture_id": "f07",
+          "furniture_name": "市场"
+        },
+        {
+          "furniture_id": "f08",
+          "furniture_name": "花店"
+        },
+        {
+          "furniture_id": "f09",
+          "furniture_name": "商店"
+        },
+        {
+          "furniture_id": "f10",
+          "furniture_name": "喷泉"
+        }
+      ]
+    },
+    {
+      "building_id": "b6",
+      "building_name": "猴子休闲广场",
+      "furnitures": [
+        {
+          "furniture_id": "f11",
+          "furniture_name": "舞台"
+        },
+        {
+          "furniture_id": "f12",
+          "furniture_name": "宴会桌"
+        },
+        {
+          "furniture_id": "f13",
+          "furniture_name": "小桥景观"
+        },
+        {
+          "furniture_id": "f14",
+          "furniture_name": "蘑菇房"
+        }
+      ]
+    },
+    {
+      "building_id": "b7",
+      "building_name": "大金牙赌场",
+      "furnitures": [
+        {
+          "furniture_id": "f15",
+          "furniture_name": "赌桌"
+        }
+      ]
+    },
+    {
+      "building_id": "b8",
+      "building_name": "风月农场",
+      "furnitures": [
+        {
+          "furniture_id": "f16",
+          "furniture_name": "农田"
+        }
+      ]
+    }
+  ],
+  "chapter_endings": [
+    "顺利发现信纸墨迹与赌场墨水的关联，为后续调查打下基础，Alice 和“我”信心满满继续追查。",
+    "虽然发现了墨水关联，但线索被破坏，调查陷入暂时困境，Alice 和“我”有些沮丧但不放弃。",
+    "在发现墨水关联过程中，引起了幕后黑手的警觉，他们开始采取更隐蔽的手段干扰调查。"
+  ],
+  "chapter_goal": "\"\"",
+  "chapter_number": 4,
+  "current_chapter_index": 1,
+  "npc_list": [
+    {
+      "age": 35,
+      "background_experience": "曾是边境护卫队的一员，在历经多年奔波后选择定居此地，负责训练年轻人防身与生存技巧。",
+      "favorability": 60,
+      "gender": "男",
+      "job": "教官",
+      "money": 1200,
+      "mood": 68,
+      "npc_id": "n1",
+      "npc_name": "李川",
+      "personality": "沉稳、守纪律、少言寡语",
+      "sanity": 80,
+      "stamina": 95
+    },
+    {
+      "age": 28,
+      "background_experience": "她原是一名旅行剧团的演员，剧团解散后，她留下来经营广场上的表演活动，用歌声和舞蹈为人带来笑容。",
+      "favorability": 80,
+      "gender": "女",
+      "job": "舞台主持人",
+      "money": 2400,
+      "mood": 92,
+      "npc_id": "n2",
+      "npc_name": "苏婉",
+      "personality": "开朗、浪漫、感性",
+      "sanity": 85,
+      "stamina": 70
+    },
+    {
+      "age": 40,
+      "background_experience": "曾是远地的学者，离开尘嚣后在赌场担任账务与运营顾问。他总说‘在这里，运气比理论更有趣’。",
+      "favorability": 50,
+      "gender": "男",
+      "job": "赌场顾问",
+      "money": 5200,
+      "mood": 55,
+      "npc_id": "n3",
+      "npc_name": "王启明",
+      "personality": "理智、冷静、略带玩世不恭",
+      "sanity": 75,
+      "stamina": 65
+    },
+    {
+      "age": 32,
+      "background_experience": "花园的主人，据说她来到此地是为了照顾一片被遗忘的花圃。她相信花草能感知人心。",
+      "favorability": 90,
+      "gender": "女",
+      "job": "园艺师",
+      "money": 1700,
+      "mood": 88,
+      "npc_id": "n4",
+      "npc_name": "林月",
+      "personality": "温柔、细腻、安静",
+      "sanity": 96,
+      "stamina": 82
+    },
+    {
+      "age": 42,
+      "background_experience": "负责打理周边的农田与果林，他喜欢土地的气息，也乐于帮助他人修理工具。",
+      "favorability": 72,
+      "gender": "男",
+      "job": "农场主",
+      "money": 3100,
+      "mood": 78,
+      "npc_id": "n5",
+      "npc_name": "赵石",
+      "personality": "朴实、直爽、勤劳",
+      "sanity": 83,
+      "stamina": 93
+    },
+    {
+      "age": 26,
+      "background_experience": "流浪歌手，常在餐饮街演唱。他说自己来到这里后，终于能让音乐慢下来，被人真心倾听。",
+      "favorability": 57,
+      "gender": "男",
+      "job": "街头艺人",
+      "money": 900,
+      "mood": 87,
+      "npc_id": "n6",
+      "npc_name": "阿斐",
+      "personality": "自由、洒脱、富有想象力",
+      "sanity": 68,
+      "stamina": 62
+    },
+    {
+      "age": 38,
+      "background_experience": "原本是研究历史的学者，如今管理旅舍帐篷区。她喜欢收集旅行者留下的故事与旧物。",
+      "favorability": 78,
+      "gender": "女",
+      "job": "旅舍管理员",
+      "money": 1600,
+      "mood": 84,
+      "npc_id": "n7",
+      "npc_name": "陈慧",
+      "personality": "理性、温和、有条理",
+      "sanity": 92,
+      "stamina": 76
+    }
+  ],
+  "past_plot_summary": "\"故事刚刚开始，还没有发生任何剧情\"",
+  "story": "\"在卡卡利科村，Alice 曾是最利落的战士。我常与她和伙伴们在八马训练营地一同训练，大家会在营地中分享干粮、畅谈未来。营地里，靶场的木靶立得整整齐齐，露营帐篷在微风中轻轻晃动。某个星夜，我和 Alice 在营地信箱旁整理物资，信箱就立在营地角落，旁边堆满了物资箱。Alice 无意间翻出一封没有署名的信，信纸皱巴巴的，上面的字迹刻意藏了笔锋，内容显示有人对 Alice 积怨已久，还妄图挑拨她和同伴的关系。\\n\\n为了不影响营地和谐，我陪着 Alice 悄悄展开调查。我们先找相熟的人聊天，有人说最近营地外围总有陌生身影徘徊，还有人提到 Alice 上次任务后，有同伴私下抱怨任务分配。可这些零碎信息无法拼凑出真相。直到 Alice 注意到信纸边缘的墨迹，那颜色和质感，和镇上大金牙赌场账房里用来记账的墨水一模一样。\\n\\n我们顺着线索来到镇上，先去了王姐餐馆。餐馆里，餐桌整齐排列，酒吧台上酒杯闪烁。我们在喧闹的厅堂里观察往来的人，也在安静的角落核对细节，但每次快要摸到线索时，总会出现似是而非的指引，把我们引向无关方向。\\n\\n途中，曾经和 Alice 并肩作战的人态度变得奇怪，眼神躲闪，说话吞吞吐吐。还有人悄悄提醒我们“别太相信身边人”，这让原本就紧绷的信任关系更添裂痕。我们又去了猴子休闲广场，舞台上灯光闪烁，可我们的心情却越来越沉重。\\n\\n最后，那些被忽略的细节、反常的态度终于串联起来，Alice 震惊地发现，一直在背后策划这一切的，竟是曾经和她无话不谈、并肩闯过无数难关的好友。Alice 站在广场的小桥景观旁，眼神中满是痛苦和难以置信，微风轻轻吹动她的发丝，而我的心情也如同这风中的落叶，五味杂陈。\"",
+  "story_endings": [
+    "Alice 选择原谅好友，两人解开误会，营地恢复往日和谐，大家更加珍惜彼此的情谊。",
+    "Alice 无法原谅好友的背叛，好友离开营地，Alice 虽然有些伤感，但营地在经历此次风波后更加团结。",
+    "好友因愧疚离开村子，Alice 时常想起曾经的友谊，心中留下一丝遗憾，但依然坚守在营地继续守护村子。"
+  ],
+  "story_goal": "\"帮助 Alice 找出写匿名信、企图挑拨她和同伴关系的幕后黑手，恢复营地的和谐与信任。\""
+}

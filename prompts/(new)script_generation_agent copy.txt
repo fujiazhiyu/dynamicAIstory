@@ -4,7 +4,9 @@
 {{story}} 
 
 游戏环境系统提供的数据如下：
-a. NPC 列表: npcs_list
+a. 游戏环境中的全部npc list数据: 
+{{npc_list}}
+
 字段说明：
 - npc_id：NPC 唯一标识
 - npc_name：NPC 名字
@@ -18,18 +20,16 @@ a. NPC 列表: npcs_list
 - sanity：脑力/精神值。
 - money：金钱。
 - mood：心情值
-游戏环境中的全部npc list数据：
-{{npc_list}}
 
-b. 建筑和家具 列表：buildings_furnitures_list
+b. 游戏环境提供的建筑和家具列表数据：
+{{building_furnitures_list}} 
+
 字段说明：
 - building_id：建筑唯一标识
 - building_name：建筑显示名称
 - furnitures：该建筑包含的家具列表
 - furniture_id：家具唯一标识
 - furniture_name：家具显示名称  
-游戏环境中可选择的building_furnitures list（可以只挑选部分buildings及其层级下的furnitures作为情节发生场景写入故事）：
-{{building_furnitures_list}} 
 
 故事一共分为{{chapter_number}}个章节，
 在之前的章节中已经发生的剧情：{{past_plot_summary}}。
@@ -80,15 +80,15 @@ b. 建筑和家具 列表：buildings_furnitures_list
   - turn_index (integer) — 顺序且唯一，从 0 开始 （必需） 
   - speaker (string) — 说话者：某个 npc_id 或 `"player"` （必需） 
   * 若 speaker != "player"，表示 NPC 发言回合：  
-  - line (string) — NPC 的一句台词（必需）
-  - narration (string) — 非台词的旁白/描述（可选）   
+  - line (string) — NPC 的一句台词，仅包含NPC的台词（去除动作表情语气等描述），需简洁清晰地表达剧情相关信息（必需）
+  - narration (string) — 仅展示道具传递的信息，如信件内容、雕刻文字、听到的声音等（可选）   
   - effects（array of object） — 只包含 1 个 effect object,即表示npc说完台词后，影响数值的变化（必需）
   * 若 speaker == "player"，表示玩家选择回合：  
   - options（array of object）本回合提供给玩家的选项列表（必需）  
     每个 option 包含：  
     - option_id (string) — 选项唯一标识（必需）
     - text (string) — 选项内容，即代表玩家选择这条选项说的话（必需）
-    - narration (string) — 非台词的旁白/揭示，选择该选项后，展示给玩家（可选）
+    - narration (string) — 仅展示道具传递的信息，如信件内容、雕刻文字、听到的声音等，选择该选项后，展示给玩家（可选）
   - effects (array of object) — effects 数组各项与 options 一一对应，即表示选择对应选项后，影响数值的变化。（必需）
 
   effects字段说明：
@@ -98,7 +98,7 @@ b. 建筑和家具 列表：buildings_furnitures_list
     - gain_items (array) string[N] — 字符串数组，表示获得的物品名称列表（无物品则空数组）
        
 
-返回的 JSON 结构的最小示例：
+返回的内容( JSON 结构)的最小示例：
 {
   "chapter_id": "chap_1_betrayal",
   "title": "信任之弦",
@@ -170,6 +170,6 @@ b. 建筑和家具 列表：buildings_furnitures_list
 }
 
 注意事项 / 强制规则：
-1. 返回的 JSON 结构体必须合法（有效的 JSON，比如：数组中的值如果是正数，不应该有 + 号）
+1. 返回的内容必须是严格合法的JSON格式（有效的 JSON，比如：数组中的值如果是正数，不应该有 + 号）
 2. 每个 turn 只能有一句话（line）或一组选项（options），不能同时有两者或其他未定义结构
 3. JSON 结构内不得出现未在说明里提到的键（禁止自定义键）
