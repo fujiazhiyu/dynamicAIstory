@@ -1,0 +1,175 @@
+{
+  "chapter_id": "chap_1_betrayal",
+  "title": "信任之弦",
+  "scene": {
+    "building_id": "b3",
+    "building_name": "八马训练营地",
+    "furniture_id": "f04",
+    "furniture_name": "靶场",
+    "description": "傍晚的靶场。李川与苏婉正焦急不安地等待着Alice的到来。一场信任的考验即将展开。"
+  },
+  "npcs": [
+    { "npc_id": "n1", "npc_name": "李川" },
+    { "npc_id": "n2", "npc_name": "苏婉" },
+    { "npc_id": "alice", "npc_name": "Alice" }
+  ],
+  "turns": [
+    {
+      "turn_index": 1,
+      "speaker": "n1",
+      "line": "今晚的风有点冷。"
+    },
+    {
+      "turn_index": 2,
+      "speaker": "n2",
+      "line": "是啊，太阳落得也比平时快。"
+    },
+    {
+      "turn_index": 3,
+      "speaker": "alice",
+      "line": "你们的气氛今天看起来有点奇怪，发生什么事了吗？"
+    },
+    {
+      "turn_index": 4,
+      "speaker": "n1",
+      "line": "朋友，我收到一封匿名信，信中指控你向大家隐瞒了一些事情。"
+    },
+    {
+      "turn_index": 5,
+      "speaker": "player",
+      "options": [
+        {
+          "option_id": "o1",
+          "text": "我隐瞒了什么事情？",
+          "effects": {
+            "favorability_change": { "n1": 2 },
+            "player_attribute": { "sanity": 1 }
+          }
+        },
+        {
+          "option_id": "o2",
+          "text": "我不在意那些流言。",
+          "effects": {
+            "favorability_change": { "n1": -3 },
+            "player_attribute": { "sanity": -2 }
+          }
+        }
+      ]
+    },
+    {
+      "turn_index": 6,
+      "speaker": "n2",
+      "line": "匿名信里面夹着一张字条：‘后天是交货的日子，老地方见’。是你的笔迹。"
+    },
+    {
+      "turn_index": 7,
+      "speaker": "player",
+      "options": [
+        {
+          "option_id": "o3",
+          "text": "那只是巧合吧？",
+          "effects": {
+            "favorability_change": { "n2": -2 },
+            "player_attribute": { "sanity": -1 }
+          }
+        },
+        {
+          "option_id": "o4",
+          "text": "能把那封信给我看吗？",
+          "effects": {
+            "favorability_change": { "n2": 3 },
+            "player_attribute": { "sanity": 2 },
+            "gain_item": "匿名信"
+          }
+        }
+      ]
+    },
+    {
+      "turn_index": 8,
+      "speaker": "alice",
+      "line": "这封信看起来不普通，要不要现在看看写了什么？"
+    },
+    {
+      "turn_index": 9,
+      "speaker": "player",
+      "options": [
+        {
+          "option_id": "o5",
+          "text": "好，打开信看看。",
+          "effects": {
+            "player_attribute": { "sanity": 2 }
+          },
+          "narration":  "信上写着：<你以为忠诚永固，却不知背叛在夜里潜伏>"
+        },
+        {
+          "option_id": "o6",
+          "text": "别管它，这件事情一看就是胡扯！",
+          "effects": {
+            "player_attribute": { "sanity": -1 }
+          }
+        }
+      ]
+    },
+    {
+      "turn_index": 10,
+      "speaker": "n1",
+      "line": "我不想怀疑你，但这封信让我觉得有人在背后动手脚。"
+    },
+    {
+      "turn_index": 11,
+      "speaker": "n2",
+      "line": "我可以帮你查，我有一些熟人知道这类信纸的来路。"
+    },
+    {
+      "turn_index": 12,
+      "speaker": "player",
+      "options": [
+        {
+          "option_id": "o7",
+          "text": "好，我们一起查清真相吧。",
+          "effects": {
+            "favorability_change": { "n1": 5 },
+            "player_attribute": { "sanity": 1 }
+          }
+        },
+        {
+          "option_id": "o8",
+          "text": "我自己能处理，不需要帮忙。",
+          "effects": {
+            "favorability_change": { "n1": -4 }
+          }
+        }
+      ]
+    },
+    {
+      "turn_index": 13,
+      "speaker": "alice",
+      "line": "你们的调查要小心点。我检测到这封信的墨迹成分，像是赌场账房常用的那种墨水。也许下一个线索在那边。"
+    },
+    {
+      "turn_index": 14,
+      "speaker": "n1",
+      "line": "那好，我们分头查查情况。有消息了来这里会合。"
+    },
+    {
+      "turn_index": 15,
+      "speaker": "alice",
+      "line": "我们下个目的地是大金牙赌场。出发吧。"
+    }
+  ],
+  "chapter_goal": "取得苏婉和李川的信任，寻找背叛者的线索。",
+  "chapter_endings": [
+    {
+      "ending_id": "e1",
+      "description": "成功取得李川和苏婉的信任，你们决定一起调查背叛者的身份。"
+    },
+    {
+      "ending_id": "e2",
+      "description": "李川，苏婉对你保持怀疑，但你决定继续前往寻找线索。"
+    },
+    {
+      "ending_id": "e3",
+      "description": "李川，苏婉和你之间的信任关系破裂，你决定独自前往调查。"
+    }
+  ]
+}
