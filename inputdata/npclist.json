@@ -1,6 +1,20 @@
 [
     {
-        "npc_id": "n1",
+        "npc_id": "ai_assistant",
+        "npc_name": "Alice",
+        "background_experience": "曾是卡卡利科村最利落的战士，后几经漂泊来到此地。",
+        "gender": "女",
+        "age": 26,
+        "job": "战士",
+        "personality": "灵活，健美，果断",
+        "favorability": 90,
+        "stamina": 90,
+        "sanity": 86,
+        "money": 1000,
+        "mood": 72
+    },
+    {
+        "npc_id": "npc1",
         "npc_name": "李川",
         "background_experience": "曾是边境护卫队的一员，在历经多年奔波后选择定居此地，负责训练年轻人防身与生存技巧。",
         "gender": "男",
@@ -14,7 +28,7 @@
         "mood": 68
     },
     {
-        "npc_id": "n2",
+        "npc_id": "npc2",
         "npc_name": "苏婉",
         "background_experience": "她原是一名旅行剧团的演员，剧团解散后，她留下来经营广场上的表演活动，用歌声和舞蹈为人带来笑容。",
         "gender": "女",
@@ -28,7 +42,7 @@
         "mood": 92
     },
     {
-        "npc_id": "n3",
+        "npc_id": "npc3",
         "npc_name": "王启明",
         "background_experience": "曾是远地的学者，离开尘嚣后在赌场担任账务与运营顾问。他总说‘在这里，运气比理论更有趣’。",
         "gender": "男",
@@ -42,7 +56,7 @@
         "mood": 55
     },
     {
-        "npc_id": "n4",
+        "npc_id": "npc4",
         "npc_name": "林月",
         "background_experience": "花园的主人，据说她来到此地是为了照顾一片被遗忘的花圃。她相信花草能感知人心。",
         "gender": "女",
@@ -56,7 +70,7 @@
         "mood": 88
     },
     {
-        "npc_id": "n5",
+        "npc_id": "npc5",
         "npc_name": "赵石",
         "background_experience": "负责打理周边的农田与果林，他喜欢土地的气息，也乐于帮助他人修理工具。",
         "gender": "男",
@@ -70,7 +84,7 @@
         "mood": 78
     },
     {
-        "npc_id": "n6",
+        "npc_id": "npc6",
         "npc_name": "阿斐",
         "background_experience": "流浪歌手，常在餐饮街演唱。他说自己来到这里后，终于能让音乐慢下来，被人真心倾听。",
         "gender": "男",
@@ -84,7 +98,7 @@
         "mood": 87
     },
     {
-        "npc_id": "n7",
+        "npc_id": "npc7",
         "npc_name": "陈慧",
         "background_experience": "原本是研究历史的学者，如今管理旅舍帐篷区。她喜欢收集旅行者留下的故事与旧物。",
         "gender": "女",

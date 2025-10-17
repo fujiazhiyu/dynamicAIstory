@@ -43,8 +43,8 @@ b. 建筑和家具 列表：buildings_furnitures_list
 6. 优化内容逻辑：初稿完成后，优先删除非核心内容（如 “多余环境描写、无关对话、无意义的人物互动、不推动情节的场景切换” 等）；检查逻辑漏洞（如 “伏笔未回收、动机不合理、行为与人物特质矛盾、规则前后不一致、巧合过多、信息差设置不合理” 等），补充必要解释；打磨开头（300 字内呈现核心冲突、关键悬念或人物核心困境）与结尾（呼应核心情感、核心冲突或人物成长），强化故事完整性。
 
 **输出约束**：
-- 所有出场 NPC 必须从 {{npc_list}} 中挑选，且人物言行、性格需严格匹配其 `background_experience` 和 `personality` 字段；  
-- 所有情节场景必须从 {{building_furnitures_list}} 中挑选建筑及对应家具，场景描述需包含该建筑的 `building_name` 和至少1个 `furniture_name`，确保与游戏环境数据一致；  
+- 所有出场 NPC 必须从 npc_list 中挑选，且人物言行、性格需严格匹配其 `background_experience` 和 `personality` 字段；  
+- 所有情节场景必须从 building_furnitures_list 中挑选建筑及对应家具，场景描述需包含该建筑的 `building_name` 和至少1个 `furniture_name`，确保与游戏环境数据一致；  
 
 生成：
 a.润色后的完整故事文本（2000字以内）；
@@ -55,18 +55,18 @@ e.故事第一章的可能结局
 
 输出 **JSON** 格式，结构如下：
 {
-    "story": string //润色后的完整故事文本，逻辑节点上上按照章节划分
-    "story_goal": string // 故事目标，明确主角最终想要达成的目标，需与核心冲突呼应
-    "story_endings": array of string, // 故事的结局列表，包含多个合理结局选项，每个结局包含“主角最终状态”“核心冲突解决方式”和“至少1个关键 NPC 的结局影响”。注意体现结局的多样性
-    "chapter1_goal": string // 第一章目标，明确主角在第一章需要达成的目标，需包含“核心冲突引入”和“首个悬念钩子”
-    "chapter1_endings": array of string, // 第一章结局列表，包含多个合理结局选项，每个结局需包含“第一章目标达成情况”“关键伏笔的进展”和“对后续章节的影响”，尽量体现结局的多样性
-    "chapter_number": integer // 故事总章节数，通常为3~5，需与故事文本的章节逻辑点划分一致
+    "story": "润色后的完整故事文本" // string 润色后的完整故事文本，逻辑节点上上按照章节划分
+    "story_goal": "故事目标" // string 故事目标，明确主角最终想要达成的目标，需与核心冲突呼应
+    "story_endings": ["故事结局1","故事结局2"， ...], // array of string 故事的结局列表，包含 3 ~ 6 个合理结局选项，每个结局包含“主角最终状态”“核心冲突解决方式”和“至少1个关键 NPC 的结局影响”。注意体现结局的多样性
+    "chapter1_goal": "章节目标" // string 本章目标，明确主角在本章需要达成的目标，需包含“核心冲突引入”和“首个悬念钩子”
+    "chapter1_endings": ["章节结局1","章节结局2", ...], // array of string 第一章结局列表，包含2 ~ 4 个合理结局选项，每个结局需包含“第一章目标达成情况”“关键伏笔的进展”和“对后续章节的影响”，尽量体现结局的多样性
+    "chapter_number": 4 // integer 故事总章节数，通常为3~5，需与故事文本的章节逻辑点划分一致
 }
 
 输出前请完成以下5点自查，若任何一点不通过，**立即重新生成JSON**：
 1. 是否仅包含纯 JSON 数据？无思考过程、解释、备注、前缀后缀等额外内容；
 2. JSON 是否包含所有已定义字段（story、story_goal、story_endings、chapter1_goal、chapter1_endings、chapter_number）？且无任何自定义字段；
-3. 出场 NPC 是否均来自 {{npc_list}}？且人物言行、性格是否匹配其 background_experience 和 personality 字段；
-4. 情节场景是否均来自 {{building_furnitures_list}}？且场景描述是否包含 building_name 和至少1个 furniture_name；
+3. 出场 NPC 是否均来自 npc_list？且人物言行、性格是否匹配其 background_experience 和 personality 字段；
+4. 情节场景是否均来自 building_furnitures_list？且场景描述是否包含 building_name 和至少1个 furniture_name；
 5. story_endings 和 chapter1_endings 是否各≥2个结局？且每个结局是否包含规定的“核心要素”（如 story_endings 含 NPC 影响、chapter1_endings 含对后续章节的影响）；
 确认无误后，直接输出JSON，无需任何前缀或后缀。
