@@ -46,7 +46,7 @@
 ### node 对象格式（每个节点必须且仅包含下列字段）：
 
 - `node_id`（string） — NPC对话 / 玩家选项节点的唯一标识（格式建议："npc" 或 "player" 前缀加 "_turn_轮次序号"）
-- `speaker`（string） — npc_id 或 `"player"` 表示节点代表谁 说话/选择 的台词 
+- `speaker`（string） — npc_id 或 `"player"` 表示节点代表谁在 说话/选择 
 - `line`（string） — 该节点的纯对话文本（禁止语气，表情或动作等客观描述）  
 - `next_node`（array of string） — 指向接续本节点台词的后续 说话节点 或 选择节点 的 `node_id` 列表；若无后续，则空数组 `[]`
 

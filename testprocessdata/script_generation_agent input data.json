@@ -123,6 +123,20 @@
   "current_chapter_index": 1,
   "npc_list": [
     {
+        "npc_id": "ai_assistant",
+        "npc_name": "Alice",
+        "background_experience": "曾是卡卡利科村最利落的战士，后几经漂泊来到此地。",
+        "gender": "女",
+        "age": 26,
+        "job": "战士",
+        "personality": "灵活，健美，果断",
+        "favorability": 90,
+        "stamina": 90,
+        "sanity": 86,
+        "money": 1000,
+        "mood": 72
+    },
+    {
       "age": 35,
       "background_experience": "曾是边境护卫队的一员，在历经多年奔波后选择定居此地，负责训练年轻人防身与生存技巧。",
       "favorability": 60,
