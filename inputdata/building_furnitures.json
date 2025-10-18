@@ -1,0 +1,114 @@
+[
+    {
+        "building_id": "b1",
+        "building_name": "猎人的木屋",
+        "furnitures": [
+            {
+                "furniture_id": "f01",
+                "furniture_name": "储物箱"
+            }
+        ]
+    },
+    {
+        "building_id": "b2",
+        "building_name": "王姐餐馆",
+        "furnitures": [
+            {
+                "furniture_id": "f02",
+                "furniture_name": "餐桌"
+            },
+            {
+                "furniture_id": "f03",
+                "furniture_name": "酒吧台"
+            }
+        ]
+    },
+    {
+        "building_id": "b3",
+        "building_name": "八马训练营地",
+        "furnitures": [
+            {
+                "furniture_id": "f04",
+                "furniture_name": "靶场"
+            },
+            {
+                "furniture_id": "f05",
+                "furniture_name": "露营帐篷"
+            }
+        ]
+    },
+    {
+        "building_id": "b4",
+        "building_name": "星星旅馆",
+        "furnitures": [
+            {
+                "furniture_id": "f06",
+                "furniture_name": "旅舍帐篷"
+            }
+        ]
+    },
+    {
+        "building_id": "b5",
+        "building_name": "月亮大商场",
+        "furnitures": [
+            {
+                "furniture_id": "f07",
+                "furniture_name": "市场"
+            },
+            {
+                "furniture_id": "f08",
+                "furniture_name": "花店"
+            },
+            {
+                "furniture_id": "f09",
+                "furniture_name": "商店"
+            },
+            {
+                "furniture_id": "f10",
+                "furniture_name": "喷泉"
+            }
+        ]
+    },
+    {
+        "building_id": "b6",
+        "building_name": "猴子休闲广场",
+        "furnitures": [
+            {
+                "furniture_id": "f11",
+                "furniture_name": "舞台"
+            },
+            {
+                "furniture_id": "f12",
+                "furniture_name": "宴会桌"
+            },
+            {
+                "furniture_id": "f13",
+                "furniture_name": "小桥景观"
+            },
+            {
+                "furniture_id": "f14",
+                "furniture_name": "蘑菇房"
+            }
+        ]
+    },
+    {
+        "building_id": "b7",
+        "building_name": "大金牙赌场",
+        "furnitures": [
+            {
+                "furniture_id": "f15",
+                "furniture_name": "赌桌"
+            }
+        ]
+    },
+    {
+        "building_id": "b8",
+        "building_name": "风月农场",
+        "furnitures": [
+            {
+                "furniture_id": "f16",
+                "furniture_name": "农田"
+            }
+        ]
+    }
+]
