@@ -1,0 +1,176 @@
+{
+  "chapter_scripts": {
+    "chapter_id": "chap_1_betrayal",
+    "endings": [
+      {
+        "description": "你决定与 Alice 深夜潜入赌场账房查墨迹来源，她递给你一个护符压阵。",
+        "effects": {
+          "favorability_change": [
+            2,
+            1
+          ],
+          "gain_items": [
+            "星耀护符"
+          ],
+          "player_attribute": [
+            0,
+            1,
+            -1,
+            2,
+            0
+          ]
+        },
+        "end_node": "ai_turn_5a",
+        "ending_id": "go_to_casino"
+      },
+      {
+        "description": "你选择稳妥地比对墨样，Alice 将一瓶墨迹样品交给你作比对用。",
+        "effects": {
+          "favorability_change": [
+            1,
+            1
+          ],
+          "gain_items": [
+            "墨迹样本瓶"
+          ],
+          "player_attribute": [
+            0,
+            2,
+            0,
+            1,
+            1
+          ]
+        },
+        "end_node": "ai_turn_5b",
+        "ending_id": "investigate_ink"
+      },
+      {
+        "description": "你决定明早公开对质，Alice 把嫌疑名单交给你，但她神色明显不安。",
+        "effects": {
+          "favorability_change": [
+            -1,
+            2
+          ],
+          "gain_items": [
+            "嫌疑名单"
+          ],
+          "player_attribute": [
+            0,
+            -1,
+            0,
+            0,
+            2
+          ]
+        },
+        "end_node": "ai_turn_5c",
+        "ending_id": "open_confrontation"
+      }
+    ],
+    "head": "npc_turn_0",
+    "nodes": [
+      {
+        "line": "你来了？Alice 一直在找你，说发现了点奇怪的东西。",
+        "next_node": [
+          "ai_turn_1"
+        ],
+        "node_id": "npc_turn_0",
+        "speaker": "npc1"
+      },
+      {
+        "line": "我在物资箱底下找到这封匿名信——有人在暗地里挑拨我们。",
+        "next_node": [
+          "player_turn_2a",
+          "player_turn_2b"
+        ],
+        "node_id": "ai_turn_1",
+        "speaker": "ai_assistant"
+      },
+      {
+        "line": "让我看看内容。",
+        "next_node": [
+          "ai_turn_3"
+        ],
+        "node_id": "player_turn_2a",
+        "speaker": "player"
+      },
+      {
+        "line": "别慌，先说信上写了什么。",
+        "next_node": [
+          "ai_turn_3"
+        ],
+        "node_id": "player_turn_2b",
+        "speaker": "player"
+      },
+      {
+        "line": "信里说我抢功劳，还提到一种奇怪的蓝黑墨迹。",
+        "next_node": [
+          "player_turn_4a",
+          "player_turn_4b",
+          "player_turn_4c"
+        ],
+        "node_id": "ai_turn_3",
+        "speaker": "ai_assistant"
+      },
+      {
+        "line": "这墨迹我好像在哪见过，我们去赌场账房查查？",
+        "next_node": [
+          "ai_turn_5a"
+        ],
+        "node_id": "player_turn_4a",
+        "speaker": "player"
+      },
+      {
+        "line": "我更想比对下墨迹，看看是不是同一种墨水。",
+        "next_node": [
+          "ai_turn_5b"
+        ],
+        "node_id": "player_turn_4b",
+        "speaker": "player"
+      },
+      {
+        "line": "这事要么当众问清楚，别再让流言发酵。",
+        "next_node": [
+          "ai_turn_5c"
+        ],
+        "node_id": "player_turn_4c",
+        "speaker": "player"
+      },
+      {
+        "line": "你胆子真大……好吧，拿着这护符，可能派得上用场。",
+        "next_node": [],
+        "node_id": "ai_turn_5a",
+        "speaker": "ai_assistant"
+      },
+      {
+        "line": "稳妥点好。这瓶墨样你拿着，去比比看。",
+        "next_node": [],
+        "node_id": "ai_turn_5b",
+        "speaker": "ai_assistant"
+      },
+      {
+        "line": "行，那就光明正大来一场。我把嫌疑名单交给你，小心点说话。",
+        "next_node": [],
+        "node_id": "ai_turn_5c",
+        "speaker": "ai_assistant"
+      }
+    ],
+    "npcs": [
+      {
+        "npc_id": "npc1",
+        "npc_name": "王二麻子"
+      },
+      {
+        "npc_id": "ai_assistant",
+        "npc_name": "Alice"
+      }
+    ],
+    "scene": {
+      "building_id": "b3",
+      "building_name": "酒馆",
+      "description": "傍晚的酒馆里，灯光昏黄，空气中弥漫着麦香。",
+      "furniture_id": "f04",
+      "furniture_name": "酒桌"
+    },
+    "title": "信任之弦"
+  }
+}
