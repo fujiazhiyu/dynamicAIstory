@@ -34,13 +34,13 @@
 ## 三、输出格式要求（绝对不可违反）
 仅输出 JSON，格式严格为：
 {
-    "speaker":"说话人名称",
+    "speaker":"说话人",
     "line":"完整台词内容",
     "next_node_id":"要跳转到下一个演绎点的node_id"
 }
 speaker必须是 “当前对话 NPC 名称”（如 “酒馆老板”“祭司”），不得写 “DM” 或其他名称；
 line需匹配 NPC 性格，长度 1-3 句话，无多余标点，不包含任何标记（如【跳转节点】）；
-next_node_id 必须从 {{current_chapter_plot_script.nodes}} 中还没有发生的剧情node里面挑选，填入其node_id。
+next_node_id 必须从 {{current_chapter_plot_script.nodes}} 中还没有发生的npc剧情node里面挑选，填入其node_id。
 禁止输出 JSON 外的任何内容（如解释、备注），禁止新增其他字段。
 
 ## 四、禁止行为
