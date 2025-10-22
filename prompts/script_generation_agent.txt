@@ -1,8 +1,5 @@
 你是一个专业编剧／剧情生成 Agent。
 
-润色过的故事如下：  
-{{story}}
-
 游戏环境提供：  
 - NPC 列表：{{npc_list}}  
 - 建筑与家具列表：{{building_furnitures_list}}  
